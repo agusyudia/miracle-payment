@@ -31,7 +31,7 @@
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
-                    <button class="btn btn-success" type="submit">Login</button>
+                    <a href="{{route('login')}}" class="btn btn-success">Login</a>
                 </form>
             </div>
         </div>

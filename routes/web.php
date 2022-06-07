@@ -16,15 +16,19 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-Route::get('/', [LoginController::class, 'login'])->name('login');
+Route::get('/', [PageController::class, 'index'])->name('index');
+Route::get('/login', [LoginController::class, 'login'])->name('login');
 Route::get('/register', [LoginController::class, 'register'])->name('register');
 Route::post('actionlogin', [LoginController::class, 'actionlogin'])->name('actionlogin');
+Route::post('actionregister', [LoginController::class, 'actionregister'])->name('actionregister');
 
-Route::get('home', [HomeController::class, 'index'])->name('home')->middleware('auth');
+
+Route::get('shop', [PageController::class, 'shop'])->name('shop')->middleware('auth');
+
 Route::get('actionlogout', [LoginController::class, 'actionlogout'])->name('actionlogout')->middleware('auth');
 
 
-// Route::get('/', [PageController::class, 'index'])->name('index');
+// // Route::get('/', [PageController::class, 'index'])->name('index');
 // Route::get('/shop', [PageController::class, 'shop'])->name('shop');
-// Route::get('/about', [PageController::class, 'about'])->name('about');
-// Route::get('/contact', [PageController::class, 'contact'])->name('contact');
+Route::get('/about', [PageController::class, 'about'])->name('about');
+Route::get('/contact', [PageController::class, 'contact'])->name('contact');

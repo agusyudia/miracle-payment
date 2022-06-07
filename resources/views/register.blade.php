@@ -19,8 +19,8 @@
                     <b>Opps!</b> {{session('error')}}
                 </div>
                 @endif
-                <form action="{{ route('actionlogin') }}" method="post">
-                    @csrf
+                <form action="{{ route('actionregister') }}" method="post">
+                    {{ csrf_field() }}
                     <div class="form-group mt-2">
                         <label>Name</label>
                         <input type="text" name="name" class="form-control" placeholder="Name" required="">
@@ -33,8 +33,9 @@
                         <label>Password</label>
                         <input type="password" name="password" class="form-control" placeholder="Password" required="">
                     </div>
-                    <div class="text-center">
-                        <button type="submit" class="btn btn-primary btn-block mt-2 text-center">Register</button>
+                    <div class="text-center mt-2">
+                        <a href="{{route('index')}}" class="btn btn-warning">Back</a>
+                        <button type="submit" class="btn btn-primary btn-block">Register</button>
                     </div>
                     <hr>
                     <p class="text-center">Sudah punya akun? <a href="{{route('login')}}">Login</a> sekarang!</p>
