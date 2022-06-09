@@ -3,7 +3,11 @@
 @section('content')
 
 <h1>shop</h1>
-
+@if (session('status'))
+<div class="alert alert-success">
+    {{ session('status') }}
+</div>
+@endif
 <div class="row">
     <div class="col-lg-4">
         <div class="card">

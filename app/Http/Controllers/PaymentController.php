@@ -61,8 +61,9 @@ class PaymentController extends Controller
                 $payment->payment_status = $arr['state'];
 
                 $payment->save();
-                return "Payment Is Successfull. Your Transaction Id is :" . $arr['id'];
-                return view('home/detail');
+                return redirect('/shop')->with('status', 'Payment Is Successfull. Your Transaction Id is : ' . $arr['id']);
+                // return "Payment Is Successfull. Your Transaction Id is :" . $arr['id'];
+                // return view('home/detail');
             } else {
                 return $response->getMessage();
             }
