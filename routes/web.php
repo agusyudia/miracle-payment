@@ -4,6 +4,7 @@ use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PaymentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,5 +31,12 @@ Route::get('actionlogout', [LoginController::class, 'actionlogout'])->name('acti
 
 // // Route::get('/', [PageController::class, 'index'])->name('index');
 // Route::get('/shop', [PageController::class, 'shop'])->name('shop');
+
+
+Route::post('pay', [PaymentController::class, 'pay'])->name('payment');
+Route::get('success', [PaymentController::class, 'success']);
+Route::get('error', [PaymentController::class, 'error']);
+
 Route::get('/about', [PageController::class, 'about'])->name('about');
 Route::get('/contact', [PageController::class, 'contact'])->name('contact');
+Route::get('/detail', [PageController::class, 'detail'])->name('detail');

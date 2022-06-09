@@ -22,4 +22,8 @@ class PageController extends Controller
     {
         return view('home/contact');
     }
+    public function detail()
+    {
+        return view('home/detail');
+    }
 }
