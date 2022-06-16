@@ -24,7 +24,7 @@ Route::post('actionlogin', [LoginController::class, 'actionlogin'])->name('actio
 Route::post('actionregister', [LoginController::class, 'actionregister'])->name('actionregister');
 
 
-Route::get('shop', [PageController::class, 'shop'])->name('shop')->middleware('auth');
+Route::post('pay', [PaymentController::class, 'pay'])->name('payment')->middleware('auth');
 
 Route::get('actionlogout', [LoginController::class, 'actionlogout'])->name('actionlogout')->middleware('auth');
 
@@ -33,7 +33,8 @@ Route::get('actionlogout', [LoginController::class, 'actionlogout'])->name('acti
 // Route::get('/shop', [PageController::class, 'shop'])->name('shop');
 
 
-Route::post('pay', [PaymentController::class, 'pay'])->name('payment');
+// Route::post('pay', [PaymentController::class, 'pay'])->name('payment');
+Route::get('shop', [PageController::class, 'shop'])->name('shop');
 Route::get('success', [PaymentController::class, 'success']);
 Route::get('error', [PaymentController::class, 'error']);
 

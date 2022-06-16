@@ -8,16 +8,229 @@
     {{ session('status') }}
 </div>
 @endif
-<div class="row">
-    <div class="col-lg-4">
-        <div class="card">
-            <img src="{{asset('assets/img/400x400.png')}}" class="card-img-top" alt="...">
+<div class="row list-product">
+    <div class="col-lg-2 col-md-4 col-sm-6 px-2 mb-grid-gutter">
+        <div class="card shadow item">
+            <div class="price-tag">$99</div>
+            <img src="{{asset('assets/img/200x140.jpg')}}" class="img-product">
+            <div class="middle d-flex justify-content-between">
+                <div class="text"><a href=""><span class="fa fa-eye"></span></a></div>
+                <div class="text"><a href=""><span class="fa fa-shopping-basket"></span></a></div>
+            </div>
             <div class="card-body">
-                <h5 class="card-title">item 1</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <div class="row mx-auto">
-                    <a href="{{route('detail')}}" class="btn btn-success ps-4 pe-4">Read More</a>
+                <div class="row d-flex">
+                    <div class="col-5">
+                        <span class="aww"><img src="{{asset('assets/img/unity.png')}}" alt="" width="20px">Unity</span>
+                    </div>
+                    <div class="col-7 text-right aww">
+                        <span class="fa fa-star-o"></span>
+                        <span class="fa fa-star-o"></span>
+                        <span class="fa fa-star-o"></span>
+                        <span class="fa fa-star-o"></span>
+                        <span class="fa fa-star-o"></span>
+                    </div>
                 </div>
+                <p class="name-game text-center ">Cookie Cats Pop</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-2 col-md-4 col-sm-6 px-2 mb-grid-gutter">
+        <div class="card shadow item">
+            <div class="price-tag">$99</div>
+            <img src="{{asset('assets/img/200x140.jpg')}}" class="img-product">
+            <div class="middle d-flex justify-content-between">
+                <div class="text"><a href=""><span class="fa fa-eye"></span></a></div>
+                <div class="text"><a href=""><span class="fa fa-shopping-basket"></span></a></div>
+            </div>
+            <div class="card-body">
+                <div class="row d-flex">
+                    <div class="col-5">
+                        <span class="aww"><img src="{{asset('assets/img/android.png')}}" alt="" width="20px">Android</span>
+                    </div>
+                    <div class="col-7 text-right aww">
+                        <span class="fa fa-star-o"></span>
+                        <span class="fa fa-star-o"></span>
+                        <span class="fa fa-star-o"></span>
+                        <span class="fa fa-star-o"></span>
+                        <span class="fa fa-star-o"></span>
+                    </div>
+                </div>
+                <p class="name-game text-center ">Cookie Cats Pop</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-2 col-md-4 col-sm-6 px-2 mb-grid-gutter">
+        <div class="card shadow item">
+            <div class="price-tag">$99</div>
+            <img src="{{asset('assets/img/200x140.jpg')}}" class="img-product">
+            <div class="middle d-flex justify-content-between">
+                <div class="text"><a href=""><span class="fa fa-eye"></span></a></div>
+                <div class="text"><a href=""><span class="fa fa-shopping-basket"></span></a></div>
+            </div>
+            <div class="card-body">
+                <div class="row d-flex">
+                    <div class="col-5">
+                        <span class="aww"><img src="{{asset('assets/img/ios.png')}}" alt="" width="20px"> iOs</span>
+                    </div>
+                    <div class="col-7 text-right aww">
+                        <span class="fa fa-star-o"></span>
+                        <span class="fa fa-star-o"></span>
+                        <span class="fa fa-star-o"></span>
+                        <span class="fa fa-star-o"></span>
+                        <span class="fa fa-star-o"></span>
+                    </div>
+                </div>
+                <p class="name-game text-center ">Cookie Cats Pop</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-2 col-md-4 col-sm-6 px-2 mb-grid-gutter">
+        <div class="card shadow item">
+            <div class="price-tag">$99</div>
+            <img src="{{asset('assets/img/200x140.jpg')}}" class="img-product">
+            <div class="middle d-flex justify-content-between">
+                <div class="text"><a href=""><span class="fa fa-eye"></span></a></div>
+                <div class="text"><a href=""><span class="fa fa-shopping-basket"></span></a></div>
+            </div>
+            <div class="card-body">
+                <div class="row d-flex">
+                    <div class="col-5">
+                        <span class="aww"><img src="{{asset('assets/img/unity.png')}}" alt="" width="20px">Unity</span>
+                    </div>
+                    <div class="col-7 text-right aww">
+                        <span class="fa fa-star-o"></span>
+                        <span class="fa fa-star-o"></span>
+                        <span class="fa fa-star-o"></span>
+                        <span class="fa fa-star-o"></span>
+                        <span class="fa fa-star-o"></span>
+                    </div>
+                </div>
+                <p class="name-game text-center ">Cookie Cats Pop</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-2 col-md-4 col-sm-6 px-2 mb-grid-gutter">
+        <div class="card shadow item">
+            <div class="price-tag">$99</div>
+            <img src="{{asset('assets/img/200x140.jpg')}}" class="img-product">
+            <div class="middle d-flex justify-content-between">
+                <div class="text"><a href=""><span class="fa fa-eye"></span></a></div>
+                <div class="text"><a href=""><span class="fa fa-shopping-basket"></span></a></div>
+            </div>
+            <div class="card-body">
+                <div class="row d-flex">
+                    <div class="col-5">
+                        <span class="aww"><img src="{{asset('assets/img/android.png')}}" alt="" width="20px">Android</span>
+                    </div>
+                    <div class="col-7 text-right aww">
+                        <span class="fa fa-star-o"></span>
+                        <span class="fa fa-star-o"></span>
+                        <span class="fa fa-star-o"></span>
+                        <span class="fa fa-star-o"></span>
+                        <span class="fa fa-star-o"></span>
+                    </div>
+                </div>
+                <p class="name-game text-center ">Cookie Cats Pop</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-2 col-md-4 col-sm-6 px-2 mb-grid-gutter">
+        <div class="card shadow item">
+            <div class="price-tag">$99</div>
+            <img src="{{asset('assets/img/200x140.jpg')}}" class="img-product">
+            <div class="middle d-flex justify-content-between">
+                <div class="text"><a href=""><span class="fa fa-eye"></span></a></div>
+                <div class="text"><a href=""><span class="fa fa-shopping-basket"></span></a></div>
+            </div>
+            <div class="card-body">
+                <div class="row d-flex">
+                    <div class="col-5">
+                        <span class="aww"><img src="{{asset('assets/img/ios.png')}}" alt="" width="20px"> iOs</span>
+                    </div>
+                    <div class="col-7 text-right aww">
+                        <span class="fa fa-star-o"></span>
+                        <span class="fa fa-star-o"></span>
+                        <span class="fa fa-star-o"></span>
+                        <span class="fa fa-star-o"></span>
+                        <span class="fa fa-star-o"></span>
+                    </div>
+                </div>
+                <p class="name-game text-center ">Cookie Cats Pop</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-2 col-md-4 col-sm-6 px-2 mb-grid-gutter">
+        <div class="card shadow item">
+            <div class="price-tag">$99</div>
+            <img src="{{asset('assets/img/200x140.jpg')}}" class="img-product">
+            <div class="middle d-flex justify-content-between">
+                <div class="text"><a href=""><span class="fa fa-eye"></span></a></div>
+                <div class="text"><a href=""><span class="fa fa-shopping-basket"></span></a></div>
+            </div>
+            <div class="card-body">
+                <div class="row d-flex">
+                    <div class="col-5">
+                        <span class="aww"><img src="{{asset('assets/img/unity.png')}}" alt="" width="20px">Unity</span>
+                    </div>
+                    <div class="col-7 text-right aww">
+                        <span class="fa fa-star-o"></span>
+                        <span class="fa fa-star-o"></span>
+                        <span class="fa fa-star-o"></span>
+                        <span class="fa fa-star-o"></span>
+                        <span class="fa fa-star-o"></span>
+                    </div>
+                </div>
+                <p class="name-game text-center ">Cookie Cats Pop</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-2 col-md-4 col-sm-6 px-2 mb-grid-gutter">
+        <div class="card shadow item">
+            <div class="price-tag">$99</div>
+            <img src="{{asset('assets/img/200x140.jpg')}}" class="img-product">
+            <div class="middle d-flex justify-content-between">
+                <div class="text"><a href=""><span class="fa fa-eye"></span></a></div>
+                <div class="text"><a href=""><span class="fa fa-shopping-basket"></span></a></div>
+            </div>
+            <div class="card-body">
+                <div class="row d-flex">
+                    <div class="col-5">
+                        <span class="aww"><img src="{{asset('assets/img/android.png')}}" alt="" width="20px">Android</span>
+                    </div>
+                    <div class="col-7 text-right aww">
+                        <span class="fa fa-star-o"></span>
+                        <span class="fa fa-star-o"></span>
+                        <span class="fa fa-star-o"></span>
+                        <span class="fa fa-star-o"></span>
+                        <span class="fa fa-star-o"></span>
+                    </div>
+                </div>
+                <p class="name-game text-center ">Cookie Cats Pop</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-2 col-md-4 col-sm-6 px-2 mb-grid-gutter">
+        <div class="card shadow item">
+            <div class="price-tag">$99</div>
+            <img src="{{asset('assets/img/200x140.jpg')}}" class="img-product">
+            <div class="middle d-flex justify-content-between">
+                <div class="text"><a href=""><span class="fa fa-eye"></span></a></div>
+                <div class="text"><a href=""><span class="fa fa-shopping-basket"></span></a></div>
+            </div>
+            <div class="card-body">
+                <div class="row d-flex">
+                    <div class="col-5">
+                        <span class="aww"><img src="{{asset('assets/img/ios.png')}}" alt="" width="20px"> iOs</span>
+                    </div>
+                    <div class="col-7 text-right aww">
+                        <span class="fa fa-star-o"></span>
+                        <span class="fa fa-star-o"></span>
+                        <span class="fa fa-star-o"></span>
+                        <span class="fa fa-star-o"></span>
+                        <span class="fa fa-star-o"></span>
+                    </div>
+                </div>
+                <p class="name-game text-center ">Cookie Cats Pop</p>
             </div>
         </div>
     </div>
