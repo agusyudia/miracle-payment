@@ -126,11 +126,98 @@
     </header>
 
     <section>
-        <div class="container">
-            @yield('content')
-        </div>
+        @yield('content')
     </section>
 
+    <footer class="bg-dark pt-5">
+        <div class="container pt-2 pb-3">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-left mb-4">
+                    <div class="text-nowrap mb-3">
+                        <a class="d-inline-block align-middle mt-n2 mr-2" href="">
+                            <img class="d-block" width="180" src="{{asset('assets/img/11220.png')}}" alt="MIRACLE GATES - " />
+                        </a>
+                    </div>
+                    <h6 class="pr-3 mr-3"><span class="text-primary">259 </span><span class="font-weight-normal text-white">Item Sold</span></h6>
+                    <h6 class="mr-3"><span class="text-primary">537 </span><span class="font-weight-normal text-white">Members</span></h6>
+                    <div class="widget mt-4 text-md-nowrap text-center text-md-left">
+                        <a class="social-btn sb-light sb-facebook mr-2 mb-2" href="https://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a class="social-btn sb-light sb-twitter mr-2 mb-2" href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+                        <a class="social-btn sb-light sb-pinterest mr-2 mb-2" href="https://pinterest.com" target="_blank"><i class="fa fa-pinterest"></i></a>
+                        <a class="social-btn sb-light sb-dribbble mr-2 mb-2" href="http://gplus.com" target="_blank"><i class="fa fa-google"></i></a>
+                        <a class="social-btn sb-light sb-behance mr-2 mb-2" href="https://instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+                <!-- Mobile dropdown menu -->
+                <div class="col-12 d-md-none text-center mb-4 pb-2">
+                    <div class="btn-group dropdown d-block mx-auto mb-3">
+                        <button class="btn btn-outline-light border-light dropdown-toggle" type="button" data-toggle="dropdown">Categories</button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="">Unity</a></li>
+                            <li><a class="dropdown-item" href="">iOS</a></li>
+                            <li><a class="dropdown-item" href="">Construct</a></li>
+                            <li><a class="dropdown-item" href="">Android</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group dropdown d-block mx-auto">
+                        <button class="btn btn-outline-light border-light dropdown-toggle" type="button" data-toggle="dropdown">More Info</button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="">Shop</a></li>
+                            <li><a class="dropdown-item" href="">My Favourite</a></li>
+                            <li><a class="dropdown-item" href="">My Purchases</a></li>
+                            <li><a class="dropdown-item" href="">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Desktop menu -->
+                <div class="col-md-3 d-none d-md-block text-center text-md-left mb-4">
+                    <div class="widget widget-links widget-light pb-2">
+                        <h3 class="widget-title text-light">Categories</h3>
+                        <ul class="widget-list">
+                            <li class="widget-list-item"><a class="widget-list-link" href="">Unity</a></li>
+                            <li class="widget-list-item"><a class="widget-list-link" href="">iOS</a></li>
+                            <li class="widget-list-item"><a class="widget-list-link" href="">Construct</a></li>
+                            <li class="widget-list-item"><a class="widget-list-link" href="">Android</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 d-none d-md-block text-center text-md-left mb-4">
+                    <div class="widget widget-links widget-light pb-2">
+                        <h3 class="widget-title text-light">More Info</h3>
+                        <ul class="widget-list">
+                            <li class="widget-list-item"><a class="widget-list-link" href="">Shop</a></li>
+                            <li class="widget-list-item"><a class="widget-list-link" href="">My Favourite</a></li>
+                            <li class="widget-list-item"><a class="widget-list-link" href="">My Purchases</a></li>
+                            <li class="widget-list-item"><a class="widget-list-link" href="">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pt-4 bg-darker">
+            <div class="container">
+                <div class="d-md-flex justify-content-between">
+                    <div class="pb-4 font-size-xs text-light opacity-50 text-center text-md-left">Copyright © 2021. All Right Reserved. MIRACLEGATES - Download Game Source Codes</div>
+                    <div class="widget widget-links widget-light pb-4">
+                        <ul class="widget-list d-flex flex-wrap justify-content-center justify-content-md-start">
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a class="btn-scroll-top" href="#top" data-scroll>
+        <span class="btn-scroll-top-tooltip text-muted font-size-sm mr-2">Top</span>
+        <i class="btn-scroll-top-icon fa fa-arrow-up"></i>
+    </a>
+
+    <script src="https://www.srcunity.com/resources/views/theme/js/vendor.min.js"></script>
+    <script src="https://www.srcunity.com/resources/views/theme/js/theme.min.js"></script>
+    <script src="{{asset('assets/js/aos.js')}}"></script>
+    <script src="{{asset('assets/js/cookie.js')}}"></script>
+    <script src="{{asset('assets/js/pagination.js')}}"></script>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
